@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.nav-inner {
+  width: 90%;
+  max-width: 1100px;
+  background: #f7f6ef;
+  border-radius: 40px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 26px;
+}
+
+.nav-inner nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.nav-inner nav .active {
+  background: #e9e6dc;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.contact-btn {
+  background: #111;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+
+/* ================= FINAL CTA ================= */
+.final-cta {
+  text-align: center;
+  padding: 160px 24px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta h2 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 28px;
+  font-size: 14px;
+}
+
+.logo img {
+  cursor: pointer;
+}
+/* remove any hover underline */
+.logo a {
+  text-decoration: none;
+}
+
+/* image clean */
+.logo img {
+  display: block;
+}
+
+/* Big background nudge text */
+.cta-brand {
+  margin-top: 120px;
+}
+
+.cta-brand span {
+  font-size: 220px;
+  font-weight: 700;
+  letter-spacing: -10px;
+  color: #000000;
+  opacity: 0.06;
+  line-height: 1;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .final-cta h2 {
+    font-size: 36px;
+  }
+
+  .cta-brand span {
+    font-size: 120px;
+    letter-spacing: -6px;
+  }
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  position: relative;
+  background: #f7f6ef;
+  padding-top: 200px;
+  overflow: hidden;
+}
+
+.footer-big-text {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 260px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1f1f1f;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 3;
+  margin-top: 140px;
+  padding: 0 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.footer-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+.footer-image {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}

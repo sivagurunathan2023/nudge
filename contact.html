@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Nudge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+        <a href="index.html">
+      <img src="img/logo.jpeg" alt="nudge">
+    </div>
+
+    <nav>
+      <a href="use-cases.html">Use Cases</a>
+      <a href="platform.html">Platform</a>
+      <a href="partners.html" class="active">Partners</a>
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HEADER -->
+<section class="page-header">
+  <span class="badge">Contact</span>
+  <h1>Get in touch</h1>
+  <p>
+    Interested in learning how Nudge can help<br>
+    your organization? We'd love to hear from you.
+  </p>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+  <div class="form-card">
+
+    <form id="contactForm">
+      <label>First Name</label>
+      <input type="text" required>
+
+      <label>Last Name</label>
+      <input type="text" required>
+
+      <label>Email<span>*</span></label>
+      <input type="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="thankYou" class="thank-you">
+      Thanks for submitting the form.
+    </div>
+
+  </div>
+</section>
+
+<!-- DIRECT CONTACT -->
+<div class="direct-contact">
+  <p>Or reach out directly:</p>
+  <p class="email">admin@getnudge.info</p>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-big-text">nudge</div>
+
+  <div class="footer-content">
+    <div class="footer-left">Nudge Technologies LLC</div>
+    <div class="footer-right">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+
+  <img src="img/foot.jpeg" class="footer-image" alt="trees">
+</footer>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const thankYou = document.getElementById("thankYou");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    form.style.display = "none";
+    thankYou.style.display = "flex";
+  });
+</script>
+
+</body>
+</html>
