@@ -174,3 +174,371 @@ body {
   position: relative;
   z-index: 2;
 }
+
+
+/* new css start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #e9e6d8 0%,
+    #efede2 40%,
+    #ffffff 100%
+  );
+  color: #1c1c1c;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 20px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background: #ece9dc;
+  border-radius: 40px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-dot {
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 14px;
+}
+
+.contact-btn {
+  background: #1c1c1c;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 90px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.cta-btn {
+  background: #1c1c1c;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 22px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 900px;
+  object-fit: contain;
+}
+/* ========================================
+   BEHAVIOR SECTION - ADD THIS TO YOUR CSS
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #FFFFFF;
+    color: #1a1a1a;
+}
+
+.behavior-section {
+    background: #FFFFFF;
+    padding: 6rem 2rem;
+    width: 100%;
+}
+
+.behavior-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #6B7280;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Three Column Grid */
+.behavior-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1400px;
+}
+
+/* Individual Cards */
+.behavior-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Icon Styling */
+.icon-wrapper {
+    margin-bottom: 2rem;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    color: #1a1a1a;
+    stroke-width: 1.5;
+}
+
+/* Card Title */
+.behavior-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+/* Card Description */
+.behavior-card p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+}
+
+.behavior-card p strong {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.gray-text {
+    color: #6B7280;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .behavior-grid {
+        gap: 3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .behavior-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .behavior-section {
+        padding: 4rem 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .behavior-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .behavior-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .behavior-card p {
+        font-size: 1rem;
+    }
+}
+/* ================= NUDGE FEATURES (SCOPED) ================= */
+
+.nudge-features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  font-family: 'Inter', sans-serif;
+  color: #1c1c1c;
+}
+
+.nudge-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.nudge-reverse {
+  direction: rtl;
+}
+.nudge-reverse > * {
+  direction: ltr;
+}
+
+.nudge-card {
+  background: #f7f6ef;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.nudge-card img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nudge-badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #777;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.nudge-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.nudge-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* TESTIMONIAL */
+.nudge-testimonial {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.nudge-testimonial img {
+  width: 100%;
+  border-radius: 16px;
+  background: #f7f6ef;
+}
+
+.nudge-quote {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.nudge-author {
+  font-size: 14px;
+  color: #333;
+}
+
+.nudge-author span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nudge-section,
+  .nudge-testimonial {
+    grid-template-columns: 1fr;
+  }
+}
+

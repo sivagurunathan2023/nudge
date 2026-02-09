@@ -28,9 +28,966 @@
     </nav>
   </div>
 </header>
+<!-- index code start -->
 
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <h1>Change begins with Nudge</h1>
+    <p>
+      Increase patient adherence and improve <br />
+      outcomes with behavior-based Nudges.
+    </p>
 
+    <button class="cta-btn">Get in touch</button>
 
+    <div class="hero-image">
+      <img src="images/Herohands.jpg" alt="Hands illustration" />
+    </div>
+  </main>
+  
+    <section class="behavior-section">
+        <div class="behavior-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Behavior change, done differently.</h2>
+                <p class="section-subtitle">Grounded in behavioral science. Built to create lasting change.</p>
+            </div>
+
+            <!-- Three Column Grid -->
+            <div class="behavior-grid">
+                <!-- Column 1: Personalized Nudges -->
+                <div class="behavior-card">
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <line x1="9" y1="10" x2="15" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Personalized Nudges</h3>
+                    <p><strong>Because timing and context matter.</strong> <span class="gray-text">Nudge delivers personalized micro-interactions based on each person's needs, behaviors, and patterns.</span></p>
+                </div>
+
+                <!-- Column 2: Adaptive Support -->
+                <div class="behavior-card">
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="2"></circle>
+                            <circle cx="19" cy="5" r="2"></circle>
+                            <circle cx="5" cy="19" r="2"></circle>
+                            <circle cx="19" cy="19" r="2"></circle>
+                            <line x1="13.59" y1="13.59" x2="17" y2="17"></line>
+                            <line x1="6.41" y1="17.59" x2="10" y2="14"></line>
+                            <line x1="13.59" y1="10.41" x2="17" y2="7"></line>
+                        </svg>
+                    </div>
+                    <h3>Adaptive support at scale</h3>
+                    <p><strong>Design once. Adapt endlessly.</strong> <span class="gray-text">Nudge automatically adjusts support using clinical logic and pathways, minimizing care team workload.</span></p>
+                </div>
+
+                <!-- Column 3: Insights -->
+                <div class="behavior-card">
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="20" x2="12" y2="10"></line>
+                            <line x1="18" y1="20" x2="18" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Insights that drive care forward</h3>
+                    <p><strong>Understanding what moves behavior.</strong> <span class="gray-text">Track engagement, signals, and progress. Nudge identifies patterns for earlier intervention and support.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - Nudge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: #FEFDFB;
+            color: #1a1a1a;
+        }
+
+        .use-cases-section {
+            padding: 6rem 2rem;
+            background: #FEFDFB;
+            width: 100%;
+        }
+
+        .use-cases-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            gap: 2rem;
+        }
+
+        .header-left h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .header-subtitle {
+            font-size: 1rem;
+            color: #6B7280;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .see-all-link {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        .see-all-link:hover {
+            opacity: 0.7;
+        }
+
+        .nav-arrows {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .arrow-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #E5E7EB;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .arrow-btn:hover {
+            background: #F9FAFB;
+            border-color: #D1D5DB;
+        }
+
+        .arrow-btn svg {
+            width: 18px;
+            height: 18px;
+            color: #1a1a1a;
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+        }
+
+        .use-case-card {
+            background: #F5F3ED;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #E8E6DF;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .expand-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #1a1a1a;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        .expand-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .card-content p {
+            font-size: 0.9375rem;
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1200px) {
+            .use-cases-grid {
+                grid-template-columns: repeat(3, minmax(260px, 1fr));
+            }
+        }
+
+        @media (max-width: 968px) {
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-right {
+                align-self: flex-end;
+            }
+
+            .use-cases-grid {
+                grid-template-columns: repeat(2, minmax(240px, 1fr));
+            }
+
+            .header-left h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .use-cases-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .header-left h2 {
+                font-size: 1.75rem;
+            }
+
+            .card-image {
+                height: 240px;
+            }
+        }
+
+        .use-cases-grid::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .use-cases-grid::-webkit-scrollbar-track {
+            background: #F3F4F6;
+            border-radius: 4px;
+        }
+
+        .use-cases-grid::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        .use-cases-grid::-webkit-scrollbar-thumb:hover {
+            background: #9CA3AF;
+        }
+    </style>
+</head>
+<body>
+    <section class="use-cases-section">
+        <div class="use-cases-container">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>Use cases</h2>
+                    <p class="header-subtitle">Real-world examples of how Nudge drives engagement, adherence, and follow-through across healthcare.</p>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="see-all-link">See All</a>
+                    <div class="nav-arrows">
+                        <button class="arrow-btn" aria-label="Previous">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="arrow-btn" aria-label="Next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=400&fit=crop" alt="Reinforcing therapy goals between sessions">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Reinforcing therapy goals between sessions</h3>
+                        <p>Personalized daily nudges help patients practice coping skills, reflect on mood, and stay connected to care between therapy appointments.</p>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop" alt="Guiding caregivers with support and referrals">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Guiding caregivers with support and referrals</h3>
+                        <p>Nudge gives caregivers actionable guidance, emotional support strategies, and pathways to access their own mental health care when needed.</p>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400&h=400&fit=crop" alt="Improving CPAP adherence in sleep therapy">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Improving CPAP adherence in sleep therapy</h3>
+                        <p>Real-time nudges help patients build routines, troubleshoot challenges, and stay engaged with CPAP treatment.</p>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=400&fit=crop" alt="Improving provider follow-through on clinical insights">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Improving provider follow-through on clinical insights</h3>
+                        <p>Nudge helps clinicians act quickly on AI-driven insights, close care gaps, and improve documentation accuracy.</p>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop" alt="Improving medication adherence between visits">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Improving medication adherence between visits</h3>
+                        <p>Gentle, timely nudges help patients take medications consistently and reflect on side effects without feeling monitored or overwhelmed.</p>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=400&fit=crop" alt="Supporting recovery after procedures">
+                        <button class="expand-btn" aria-label="Expand">+</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Supporting recovery after procedures</h3>
+                        <p>Nudge helps patients follow recovery instructions, monitor symptoms, and stay on track after procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Nudge Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: #FEFDFB;
+            color: #1a1a1a;
+        }
+
+        .how-it-works-section {
+            padding: 6rem 2rem;
+            background: #FEFDFB;
+            width: 100%;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .section-top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5rem;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .header-subtitle {
+            font-size: 1rem;
+            color: #6B7280;
+            line-height: 1.6;
+            max-width: 400px;
+        }
+
+        .get-in-touch-btn {
+            background: #1a1a1a;
+            color: white;
+            padding: 0.75rem 1.75rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .get-in-touch-btn:hover {
+            background: #2a2a2a;
+            transform: translateY(-2px);
+        }
+
+        /* Feature Section */
+        .feature-section {
+            margin-bottom: 8rem;
+        }
+
+        .feature-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .feature-row.reverse {
+            direction: rtl;
+        }
+
+        .feature-row.reverse > * {
+            direction: ltr;
+        }
+
+        /* Feature Content */
+        .feature-content {
+            max-width: 500px;
+        }
+
+        .feature-label {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .feature-content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .feature-content p {
+            font-size: 1.0625rem;
+            color: #6B7280;
+            line-height: 1.75;
+        }
+
+        /* Feature Mockup */
+        .feature-mockup {
+            position: relative;
+            background: #F5F3ED;
+            border-radius: 24px;
+            padding: 3rem;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Phone Mockup for Nudges */
+        .phone-mockup {
+            width: 320px;
+            height: 600px;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phone-header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B7FE8, #6B9AFF);
+            margin: 0 auto 0.5rem;
+        }
+
+        .phone-header h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .phone-header p {
+            font-size: 0.75rem;
+            color: #6B7280;
+        }
+
+        .chat-message {
+            background: #F3F4F6;
+            padding: 1rem;
+            border-radius: 16px;
+            margin-top: 1.5rem;
+        }
+
+        .chat-message p {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        .mood-scale {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .mood-btn {
+            flex: 1;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .mood-btn.great { background: #10B981; }
+        .mood-btn.good { background: #34D399; }
+        .mood-btn.okay { background: #FBBF24; }
+        .mood-btn.not-well { background: #EF4444; }
+
+        .action-btn {
+            width: 100%;
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Workflow Dashboard Mockup */
+        .workflow-mockup {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .workflow-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            background: #F9FAFB;
+            border-radius: 12px;
+        }
+
+        .workflow-item .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.75rem;
+        }
+
+        .workflow-text {
+            flex: 1;
+            font-size: 0.9375rem;
+            color: #1a1a1a;
+        }
+
+        .workflow-label {
+            padding: 0.25rem 0.75rem;
+            background: #E5E7EB;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-weight: 600;
+        }
+
+        .workflow-label.urgent { background: #FEE2E2; color: #DC2626; }
+
+        /* Insights Mockup */
+        .insights-mockup {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: #FEF3C7;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert-icon {
+            width: 32px;
+            height: 32px;
+            background: #FBBF24;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+        }
+
+        .alert-text h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .alert-text p {
+            font-size: 0.75rem;
+            color: #6B7280;
+        }
+
+        .insight-item {
+            padding: 1rem;
+            border-left: 3px solid #E5E7EB;
+            margin-bottom: 1rem;
+        }
+
+        .insight-item h5 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .insight-item p {
+            font-size: 0.8125rem;
+            color: #6B7280;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .feature-row,
+            .feature-row.reverse {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                direction: ltr;
+            }
+
+            .section-top-header {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .feature-section {
+                margin-bottom: 5rem;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .feature-content h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .how-it-works-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .phone-mockup {
+                width: 280px;
+                height: 520px;
+            }
+
+            .feature-mockup {
+                padding: 2rem;
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="how-it-works-section">
+        <div class="section-container">
+            <!-- Header -->
+            <div class="section-top-header">
+                <div class="header-content">
+                    <h1>How Nudge works</h1>
+                    <p class="header-subtitle">Technology designed to strengthen engagement, adherence, and between-visit care.</p>
+                </div>
+                <a href="#" class="get-in-touch-btn">Get in touch</a>
+            </div>
+
+            <!-- Feature 1: Nudges -->
+            <div class="feature-section">
+                <div class="feature-row">
+                    <div class="feature-content">
+                        <div class="feature-label">Nudges</div>
+                        <h2>Support tailored to each individual</h2>
+                        <p>Nudge delivers personalized micro-interventions based on behavior, timing, and context. Each message feels relevant and actionable, helping patients stay engaged between visits.</p>
+                    </div>
+                    <div class="feature-mockup">
+                        <div class="phone-mockup">
+                            <div class="phone-header">
+                                <div class="avatar"></div>
+                                <h4>Ashley from Nudge</h4>
+                                <p>Health Coach</p>
+                            </div>
+                            <div class="chat-message">
+                                <p>Healthy looks nice, but we're checking in on how you actually do you feel today?</p>
+                                <div class="mood-scale">
+                                    <button class="mood-btn great">I'm Great</button>
+                                    <button class="mood-btn good">Pretty Good</button>
+                                    <button class="mood-btn okay">It's Okay</button>
+                                    <button class="mood-btn not-well">Not so Well</button>
+                                </div>
+                                <button class="action-btn">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Workflows -->
+            <div class="feature-section">
+                <div class="feature-row reverse">
+                    <div class="feature-content">
+                        <div class="feature-label">Workflows</div>
+                        <h2>Automate journeys with precision</h2>
+                        <p>Create structured care journeys using delays, schedules, and branching logic. Workflows adapt to user behavior and deliver nudges at the right moment, keeping people on track without manual follow-up.</p>
+                    </div>
+                    <div class="feature-mockup">
+                        <div class="workflow-mockup">
+                            <div class="workflow-item">
+                                <span>📋</span>
+                                <div class="workflow-text">What concerns this use have</div>
+                                <span class="workflow-label">Trigger</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>✉️</span>
+                                <div class="workflow-text">Send "Better Health 101"</div>
+                                <span class="workflow-label">Reply</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>📊</span>
+                                <div class="workflow-text">Participation over 90%</div>
+                                <span class="workflow-label">Logic</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>✅</span>
+                                <div class="workflow-text">Yes</div>
+                                <span class="workflow-label">true</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>❌</span>
+                                <div class="workflow-text">No</div>
+                                <span class="workflow-label">false</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>💰</span>
+                                <div class="workflow-text">Reward $10.00</div>
+                                <span class="workflow-label">Rewards</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span>✉️</span>
+                                <div class="workflow-text">Send "follow-up"</div>
+                                <span class="workflow-label urgent">Nudge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Insights -->
+            <div class="feature-section">
+                <div class="feature-row">
+                    <div class="feature-content">
+                        <div class="feature-label">Insights</div>
+                        <h2>Spot patterns before issues escalate</h2>
+                        <p>Built-in analytics track engagement and behavior across programs. AI surfaces early signals so care teams can act before problems grow.</p>
+                    </div>
+                    <div class="feature-mockup">
+                        <div class="insights-mockup">
+                            <div class="alert-header">
+                                <div class="alert-icon">⚠️</div>
+                                <div class="alert-text">
+                                    <h4>Therapy Adherence Flow</h4>
+                                    <p>3 red indicators</p>
+                                </div>
+                                <span class="workflow-label">Insights</span>
+                            </div>
+                            <div class="insight-item">
+                                <h5>Gaps in follow-up hurt adherence</h5>
+                                <p>Activity dropped after extended delay due, whether from provider scheduling delays or care team intervention.</p>
+                            </div>
+                            <div class="insight-item">
+                                <h5>Boost early-week consistency</h5>
+                                <p>Send the week-start reminder Thursday to improve check-in rates through weekend engagement.</p>
+                            </div>
+                            <div class="insight-item">
+                                <h5>Target evening friction points</h5>
+                                <p>Add calming prompts and light-hearted distractions to cut afternoon dropout without delaying important interventions.</p>
+                            </div>
+                            <div class="insight-item">
+                                <h5>Reinforce crisis plan clarity</h5>
+                                <p>Link users to a crisis plan earlier to help access options and confidence in care actions that help today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="nudge-features">
+
+  <div class="nudge-section">
+    <div class="nudge-card">
+      <img src="images/image.avif" alt="Rewards UI">
+    </div>
+
+    <div class="nudge-text">
+      <span class="nudge-badge">Rewards</span>
+      <h2>Reinforce progress with feedback and check-ins</h2>
+      <p>
+        Keep users engaged with streaks, rewards, and supportive feedback.
+        Enable human or AI-powered check-ins when extra guidance is needed.
+      </p>
+    </div>
+  </div>
+
+  <div class="nudge-section nudge-reverse">
+    <div class="nudge-card">
+      <img src="images/images.avif" alt="User Portal UI">
+    </div>
+
+    <div class="nudge-text">
+      <span class="nudge-badge">User Portal</span>
+      <h2>A simple experience for patients and caregivers</h2>
+      <p>
+        Users access Nudges through SMS, email, or secure links.
+        No apps or logins are required. The portal is intuitive,
+        branded, and designed to reduce friction.
+      </p>
+    </div>
+  </div>
+
+  <div class="nudge-testimonial">
+    <img src="images/person.avif" alt="Anthony Como">
+
+    <div>
+      <p class="nudge-quote">
+        “Nudge extends care beyond therapy without increasing workload.
+        It helps us monitor progress, reinforce coping skills, and provide
+        daily support, significantly improving our behavioral health approach.”
+      </p>
+
+      <p class="nudge-author">
+        Anthony Como<br>
+        <span>Founder, KuduCare</span>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- index code end -->
 <!-- ================= FINAL CTA ================= -->
 <section class="final-cta">
   <h2>Let’s talk</h2>
