@@ -37,54 +37,80 @@ body {
   padding: 8px 16px;
   border-radius: 20px;
 }
-
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 10px;
+  top: 12px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 94%;
+  width: 92%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 10px 16px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* LOGO */
 .logo img {
-  height: 24px;
+  height: 26px;
+  display: block;
+  cursor: pointer;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+/* NAV LINKS */
 .nav-inner nav {
   display: flex;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-inner nav a {
   text-decoration: none;
-  font-size: 13px;        /* 👀 mobile readable */
-  color: #1f1f1f;
-  padding: 6px 10px;
+  font-size: 14px;
+  color: #2b2b2b;
+  padding: 8px 14px;
   border-radius: 20px;
   white-space: nowrap;
 }
 
-.nav-inner nav a:hover {
+/* ACTIVE LINK */
+.nav-inner nav .active {
   background: #e9e6dc;
+  font-weight: 500;
 }
 
-/* ACTIVE PAGE */
-.nav-inner nav .active {
+/* CONTACT BUTTON (LIGHT BG) */
+.contact-btn {
   background: #111;
-  color: #fff;
-  font-weight: 500;
+  color: #fff !important;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .nav-inner {
+    padding: 10px 14px;
+  }
+
+  .logo img {
+    height: 22px;
+  }
+
+  .nav-inner nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
 }
 
 /* HERO */
