@@ -1,6 +1,4 @@
-/* =========================
-   RESET + BASE
-========================= */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -13,17 +11,23 @@ body {
   color: #1f1f1f;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 20px;
+  top: 16px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 90%;
+  width: 92%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
@@ -34,35 +38,42 @@ body {
 }
 
 .logo img {
-  height: 26px;
+  height: 28px;
+  cursor: pointer;
 }
 
 .nav-inner nav a {
-  margin-left: 22px;
+  margin-left: 20px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   color: #2b2b2b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-inner nav a:hover {
+  background: #e9e6dc;
+}
+
+.nav-inner nav a:active {
+  transform: scale(0.96);
 }
 
 .nav-inner nav .active {
   background: #e9e6dc;
-  padding: 8px 16px;
-  border-radius: 20px;
 }
 
 .contact-btn {
   background: #111;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
+  color: #fff;
 }
 
-/* =========================
-   PAGE HEADER
-========================= */
+/* ================= PAGE HEADER ================= */
 .page-header {
   text-align: center;
   margin-top: 90px;
+  padding: 0 16px;
 }
 
 .badge {
@@ -83,27 +94,13 @@ body {
   color: #6f6f6f;
   line-height: 1.5;
 }
-.logo img {
-  cursor: pointer;
-}
 
-/* remove any hover underline */
-.logo a {
-  text-decoration: none;
-}
-
-/* image clean */
-.logo img {
-  display: block;
-}
-
-/* =========================
-   FORM SECTION
-========================= */
+/* ================= FORM ================= */
 .form-section {
   display: flex;
   justify-content: center;
   margin-top: 70px;
+  padding: 0 16px;
 }
 
 .form-card {
@@ -130,26 +127,42 @@ label span {
 
 input {
   margin-top: 6px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 6px;
   border: 1px solid #cfcfcf;
   background: #f9fafb;
-  font-size: 14px;
+  font-size: 15px;
 }
 
+input:focus {
+  outline: none;
+  border-color: #ff7a59;
+  background: #fff;
+}
+
+/* BUTTON */
 button {
-  margin-top: 22px;
-  width: 120px;
-  padding: 12px;
+  margin-top: 24px;
+  width: 100%;
+  min-height: 44px;
   border: none;
   border-radius: 6px;
   background: #ff7a59;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* THANK YOU MESSAGE */
+button:hover {
+  background: #ff633c;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* THANK YOU */
 .thank-you {
   display: none;
   height: 220px;
@@ -158,9 +171,7 @@ button {
   font-size: 16px;
 }
 
-/* =========================
-   DIRECT CONTACT
-========================= */
+/* ================= DIRECT CONTACT ================= */
 .direct-contact {
   text-align: center;
   margin: 40px 0 60px;
@@ -173,17 +184,14 @@ button {
   color: #1f1f1f;
 }
 
-/* =========================
-   FOOTER (FINAL – FIXED)
-========================= */
+/* ================= FOOTER ================= */
 .footer {
   position: relative;
   background: #f7f6ef;
-  padding-top: 200px;   /* space for big text */
+  padding-top: 200px;
   overflow: hidden;
 }
 
-/* BIG NU DGE WORD */
 .footer-big-text {
   position: absolute;
   top: 40px;
@@ -193,15 +201,14 @@ button {
   font-weight: 700;
   line-height: 1;
   color: #1f1f1f;
-  z-index: 1;           /* behind footer text */
+  z-index: 1;
   pointer-events: none;
 }
 
-/* FOOTER TEXT */
 .footer-content {
   position: relative;
-  z-index: 3;           /* top layer */
-  margin-top: 140px;    /* below big text */
+  z-index: 3;
+  margin-top: 140px;
   padding: 0 60px 60px;
   display: flex;
   justify-content: space-between;
@@ -216,10 +223,56 @@ button {
   color: #8a8a8a;
 }
 
-/* TREE IMAGE */
-.footer-image {
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;           /* between text & big word */
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-inner nav a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .page-header p {
+    font-size: 14px;
+  }
+
+  .form-card {
+    padding: 24px;
+  }
+
+  .footer-big-text {
+    font-size: 120px;
+    top: 60px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 0 20px 40px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .page-header h1 {
+    font-size: 40px;
+  }
+
+  .form-card {
+    padding: 32px;
+  }
+
+  .footer-big-text {
+    font-size: 180px;
+  }
 }
