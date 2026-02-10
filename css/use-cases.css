@@ -8,36 +8,24 @@
 body {
   background: #fff;
   color: #111;
+  font-size: 16px;
 }
 
-.logo img {
-  cursor: pointer;
-}
-
-/* remove any hover underline */
-.logo a {
-  text-decoration: none;
-}
-
-/* image clean */
-.logo img {
-  display: block;
-}
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 20px;
+  top: 16px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 90%;
+  width: 92%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,59 +33,33 @@ body {
 
 .logo img {
   height: 26px;
+  display: block;
 }
 
-.nav-inner nav a {
-  margin-left: 22px;
+nav a {
+  margin-left: 20px;
   text-decoration: none;
   font-size: 14px;
   color: #2b2b2b;
+  transition: opacity 0.2s ease;
 }
 
-.nav-inner nav .active {
+nav a:hover { opacity: 0.8; }
+
+nav .active {
   background: #e9e6dc;
   padding: 8px 16px;
   border-radius: 20px;
+  font-weight: 600;
 }
 
 .contact-btn {
   background: #111;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-
-/* HEADER */
-.header { padding: 20px 0; }
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo { height: 28px; }
-.menu a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-.menu .active {
-  background: #f4f2ea;
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-.menu .btn {
-  background: #111;
   color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
+  min-height: 44px;
 }
 
-/* ================= USE CASES HERO ================= */
-
+/* ================= HERO ================= */
 .usecases-hero {
   max-width: 900px;
   margin: 120px auto 140px;
@@ -105,7 +67,7 @@ body {
   padding: 0 24px;
 }
 
-.usecases-hero .pill {
+.pill {
   display: inline-block;
   background: #f4f2ea;
   padding: 6px 14px;
@@ -118,7 +80,6 @@ body {
   font-size: 56px;
   line-height: 1.15;
   margin-bottom: 24px;
-  font-weight: 600;
 }
 
 .usecases-hero p {
@@ -127,104 +88,82 @@ body {
   line-height: 1.6;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .usecases-hero h1 {
-    font-size: 38px;
-  }
-}
-
-/* ================= USE CASES GRID ================= */
-
+/* ================= GRID ================= */
 .usecases-grid {
   max-width: 1200px;
-  margin: 0 auto 140px;
+  margin: 0 auto 120px;
   padding: 0 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
 }
 
-.usecase-card {
-  display: flex;
-  flex-direction: column;
-}
-
 .usecase-img {
   background: #f4f2ea;
   border-radius: 20px;
   padding: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .usecase-img img {
   width: 100%;
-  display: block;
+  height: auto;
   border-radius: 14px;
+  object-fit: cover;
 }
 
 .usecase-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 
 .usecase-card p {
   font-size: 15px;
-  line-height: 1.6;
   color: #555;
+  line-height: 1.6;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .usecases-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-
-/* ================= CTA SECTION ================= */
+/* ================= CTA ================= */
 .cta-section {
   text-align: center;
-  margin: 120px 0 140px;
+  margin: 120px 0;
 }
 
 .cta-section h2 {
   font-size: 44px;
+  font-weight: 700;
   margin-bottom: 18px;
 }
 
 .cta-section p {
   font-size: 16px;
   color: #6f6f6f;
-  line-height: 1.6;
   margin-bottom: 26px;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 12px 26px;
-  background: #1f1f1f;
-  color: #ffffff;
-  font-size: 14px;
+  min-height: 44px;
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
   border-radius: 22px;
   text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
+.cta-button:hover { transform: translateY(-1px); }
+.cta-button:active { transform: scale(0.96); }
 
-
-/* =========================
-   FOOTER (FINAL – FIXED)
-========================= */
+/* ================= FOOTER ================= */
 .footer {
   position: relative;
   background: #f7f6ef;
-  padding-top: 200px;   /* space for big text */
+  padding-top: 200px;
   overflow: hidden;
 }
 
-/* BIG NU DGE WORD */
 .footer-big-text {
   position: absolute;
   top: 40px;
@@ -232,35 +171,49 @@ body {
   transform: translateX(-50%);
   font-size: 260px;
   font-weight: 700;
-  line-height: 1;
   color: #1f1f1f;
-  z-index: 1;           /* behind footer text */
   pointer-events: none;
 }
 
-/* FOOTER TEXT */
 .footer-content {
   position: relative;
-  z-index: 3;           /* top layer */
-  margin-top: 140px;    /* below big text */
+  margin-top: 140px;
   padding: 0 60px 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 14px;
   color: #8a8a8a;
 }
 
 .footer-right a {
   margin-left: 20px;
-  text-decoration: none;
   color: #8a8a8a;
+  text-decoration: none;
 }
 
-/* TREE IMAGE */
-.footer-image {
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;           /* between text & big word */
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .usecases-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a { margin-left: 0; }
+
+  .usecases-hero h1 { font-size: 36px; }
+  .usecases-grid { grid-template-columns: 1fr; }
+  .footer-big-text { font-size: 140px; }
 }
