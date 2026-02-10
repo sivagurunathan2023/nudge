@@ -20,58 +20,56 @@ img {
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 12px;
+  top: 10px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 92%;
+  width: 94%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 14px 24px;
+  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo img {
-  height: 28px;
-  cursor: pointer;
+  height: 24px;
 }
 
 .nav-inner nav {
   display: flex;
-  align-items: center;
+  gap: 6px;
 }
 
 .nav-inner nav a {
-  margin-left: 18px;
   text-decoration: none;
-  font-size: 15px;
-  color: #2b2b2b;
-  padding: 8px 14px;
+  font-size: 13px;
+  color: #1f1f1f;
+  padding: 6px 10px;
   border-radius: 20px;
-  transition: background 0.25s ease, transform 0.15s ease;
+  white-space: nowrap;
 }
 
 .nav-inner nav a:hover {
   background: #e9e6dc;
 }
 
-.nav-inner nav a:active {
-  transform: scale(0.96);
-}
-
+/* ACTIVE PAGE */
 .nav-inner nav .active {
-  background: #e9e6dc;
-}
-
-.contact-btn {
   background: #111;
   color: #fff;
+  font-weight: 500;
+}
+
+/* CONTACT – LIGHT BACKGROUND */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
 }
 
 /* ================= PAGE HEADER ================= */
@@ -90,12 +88,12 @@ img {
 }
 
 .page-header h1 {
-  font-size: 44px;
+  font-size: 32px;
   margin: 22px 0 12px;
 }
 
 .page-header p {
-  font-size: 16px;
+  font-size: 14px;
   color: #6f6f6f;
   line-height: 1.5;
 }
@@ -104,7 +102,7 @@ img {
 .partners-main {
   display: flex;
   justify-content: center;
-  margin: 70px 0 120px;
+  margin: 60px 0 100px;
   padding: 0 16px;
 }
 
@@ -113,169 +111,88 @@ img {
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 26px;
-  padding: 50px;
+  padding: 26px;
   display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.partners-text {
-  flex: 1;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .partners-text h3 {
-  font-size: 22px;
-  margin-bottom: 14px;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 .partners-text p {
-  font-size: 15px;
+  font-size: 14px;
   color: #5f5f5f;
   line-height: 1.6;
-  max-width: 420px;
-}
-
-.partners-image {
-  flex: 1;
 }
 
 /* ================= CTA ================= */
 .cta-section {
   text-align: center;
-  margin: 120px 0 140px;
+  margin: 100px 0 120px;
   padding: 0 16px;
 }
 
 .cta-section h2 {
-  font-size: 44px;
-  margin-bottom: 18px;
+  font-size: 32px;
+  margin-bottom: 16px;
 }
 
 .cta-section p {
-  font-size: 16px;
+  font-size: 14px;
   color: #6f6f6f;
   line-height: 1.6;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 12px 26px;
   background: #1f1f1f;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 22px;
   text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.cta-button:active {
-  transform: scale(0.96);
 }
 
 /* ================= FOOTER ================= */
 .footer {
   position: relative;
   background: #f7f6ef;
-  padding-top: 200px;
+  padding-top: 160px;
   overflow: hidden;
 }
 
 .footer-big-text {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 260px;
+  font-size: 120px;
   font-weight: 700;
-  line-height: 1;
   color: #1f1f1f;
   pointer-events: none;
 }
 
 .footer-content {
-  position: relative;
-  margin-top: 140px;
-  padding: 0 60px 60px;
+  margin-top: 100px;
+  padding: 0 20px 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
   font-size: 14px;
   color: #8a8a8a;
 }
 
 .footer-right a {
-  margin-left: 20px;
+  margin: 0 10px;
   text-decoration: none;
   color: #8a8a8a;
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 600px) {
-
-  .nav-inner {
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px;
-  }
-
-  .nav-inner nav {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .nav-inner nav a {
-    margin: 0;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px 0;
-  }
-
-  .contact-btn {
-    grid-column: span 2;
-  }
-
-  .page-header h1 {
-    font-size: 32px;
-  }
-
-  .partners-card {
-    flex-direction: column;
-    padding: 28px;
-    gap: 28px;
-  }
-
-  .cta-section h2 {
-    font-size: 32px;
-  }
-
-  .footer-big-text {
-    font-size: 120px;
-    top: 60px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    padding: 0 20px 40px;
-  }
-}
-
-/* ================= TABLET ================= */
-@media (min-width: 601px) and (max-width: 1024px) {
-
-  .page-header h1 {
-    font-size: 38px;
-  }
-
-  .partners-card {
-    padding: 36px;
-  }
-
-  .footer-big-text {
-    font-size: 180px;
-  }
+.footer-image {
+  width: 100%;
 }
