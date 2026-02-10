@@ -20,7 +20,7 @@ img {
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 16px;
+  top: 12px;
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -31,9 +31,14 @@ img {
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 14px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
   align-items: center;
 }
 
@@ -42,14 +47,19 @@ img {
   cursor: pointer;
 }
 
+.nav-inner nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-inner nav a {
-  margin-left: 20px;
+  margin-left: 18px;
   text-decoration: none;
   font-size: 15px;
   color: #2b2b2b;
   padding: 8px 14px;
   border-radius: 20px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.25s ease, transform 0.15s ease;
 }
 
 .nav-inner nav a:hover {
@@ -140,7 +150,6 @@ input:focus {
   background: #fff;
 }
 
-/* BUTTON */
 button {
   margin-top: 24px;
   width: 100%;
@@ -162,7 +171,6 @@ button:active {
   transform: scale(0.96);
 }
 
-/* THANK YOU */
 .thank-you {
   display: none;
   height: 220px;
@@ -201,13 +209,11 @@ button:active {
   font-weight: 700;
   line-height: 1;
   color: #1f1f1f;
-  z-index: 1;
   pointer-events: none;
 }
 
 .footer-content {
   position: relative;
-  z-index: 3;
   margin-top: 140px;
   padding: 0 60px 60px;
   display: flex;
@@ -223,17 +229,39 @@ button:active {
   color: #8a8a8a;
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE NAV FIX ================= */
 @media (max-width: 600px) {
+
+  .navbar {
+    top: 8px;
+  }
 
   .nav-inner {
     flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .nav-inner nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
   .nav-inner nav a {
-    margin-left: 0;
-    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .contact-btn {
+    grid-column: span 2;
   }
 
   .page-header h1 {
