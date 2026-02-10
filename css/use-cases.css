@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,52 +12,63 @@ body {
   font-size: 16px;
 }
 
-/* ================= NAVBAR ================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= NAVBAR (Contact style) ================= */
 .navbar {
   position: sticky;
-  top: 16px;
+  top: 10px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 92%;
+  width: 94%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 14px 24px;
+  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo img {
-  height: 26px;
-  display: block;
+  height: 24px;
 }
 
-nav a {
-  margin-left: 20px;
+.nav-inner nav {
+  display: flex;
+  gap: 6px;
+}
+
+.nav-inner nav a {
   text-decoration: none;
-  font-size: 14px;
-  color: #2b2b2b;
-  transition: opacity 0.2s ease;
+  font-size: 13px;
+  color: #1f1f1f;
+  padding: 6px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
-nav a:hover { opacity: 0.8; }
-
-nav .active {
+.nav-inner nav a:hover {
   background: #e9e6dc;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 600;
+}
+
+.nav-inner nav .active {
+  background: #111;
+  color: #fff;
+  font-weight: 500;
 }
 
 .contact-btn {
-  background: #111;
-  color: #fff;
-  min-height: 44px;
+  background: #e9e6dc;
+  color: #1f1f1f;
 }
 
 /* ================= HERO ================= */
@@ -107,7 +119,6 @@ nav .active {
 
 .usecase-img img {
   width: 100%;
-  height: auto;
   border-radius: 14px;
   object-fit: cover;
 }
@@ -156,64 +167,77 @@ nav .active {
 .cta-button:hover { transform: translateY(-1px); }
 .cta-button:active { transform: scale(0.96); }
 
-/* ================= FOOTER ================= */
+/* ================= FOOTER (Contact style) ================= */
 .footer {
   position: relative;
   background: #f7f6ef;
-  padding-top: 200px;
+  padding-top: 160px;
   overflow: hidden;
 }
 
 .footer-big-text {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 260px;
+  font-size: 120px;
   font-weight: 700;
   color: #1f1f1f;
   pointer-events: none;
 }
 
 .footer-content {
-  position: relative;
-  margin-top: 140px;
-  padding: 0 60px 60px;
+  margin-top: 100px;
+  padding: 0 20px 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
   font-size: 14px;
   color: #8a8a8a;
 }
 
 .footer-right a {
-  margin-left: 20px;
-  color: #8a8a8a;
+  margin: 0 10px;
   text-decoration: none;
+  color: #8a8a8a;
+}
+
+.footer-image {
+  width: 100%;
 }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
-  .usecases-grid { grid-template-columns: repeat(2, 1fr); }
+  .usecases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  body { font-size: 15px; }
+  body {
+    font-size: 15px;
+  }
 
   .nav-inner {
     flex-direction: column;
     gap: 12px;
   }
 
-  nav {
-    display: flex;
+  .nav-inner nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
   }
 
-  nav a { margin-left: 0; }
+  .usecases-hero h1 {
+    font-size: 36px;
+  }
 
-  .usecases-hero h1 { font-size: 36px; }
-  .usecases-grid { grid-template-columns: 1fr; }
-  .footer-big-text { font-size: 140px; }
+  .usecases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-big-text {
+    font-size: 80px;
+  }
 }
