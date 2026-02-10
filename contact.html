@@ -13,7 +13,7 @@
   <div class="nav-inner">
     <div class="logo">
       <a href="index.html">
-        <img src="img/logo.jpeg" alt="Nudge logo" loading="lazy">
+        <img src="img/logo.jpeg" alt="Nudge logo">
       </a>
     </div>
 
@@ -26,7 +26,7 @@
   </div>
 </header>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= PAGE HEADER ================= -->
 <section class="page-header">
   <span class="badge">Contact</span>
   <h1>Get in touch</h1>
@@ -78,14 +78,14 @@
     </div>
   </div>
 
-  <img src="img/foot.jpeg" class="footer-image" alt="footer trees" loading="lazy">
+  <img src="img/foot.jpeg" class="footer-image" alt="trees">
 </footer>
 
 <script>
   const form = document.getElementById("contactForm");
   const thankYou = document.getElementById("thankYou");
 
-  form.addEventListener("submit", function (e) {
+  form.addEventListener("submit", function(e) {
     e.preventDefault();
     form.style.display = "none";
     thankYou.style.display = "flex";
