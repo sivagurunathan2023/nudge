@@ -505,3 +505,24 @@ body {
   }
 
 }
+
+/* ===== MOBILE SPACING FIX ===== */
+@media (max-width: 900px) {
+
+  .platform-section,
+  .testimonial,
+  .features,
+  .benefits,
+  .science {
+    margin: 0 auto 60px !important;
+  }
+
+  .hero {
+    margin: 60px auto 60px !important;
+  }
+
+  .final-cta {
+    padding: 80px 20px 60px !important;
+  }
+
+}
