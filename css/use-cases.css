@@ -18,7 +18,7 @@ img {
   display: block;
 }
 
-/* ================= NAVBAR (Contact style) ================= */
+/* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
   top: 10px;
@@ -49,7 +49,7 @@ img {
 
 .nav-inner nav a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 13px;        /* 👀 mobile readable */
   color: #1f1f1f;
   padding: 6px 10px;
   border-radius: 20px;
@@ -59,18 +59,6 @@ img {
 .nav-inner nav a:hover {
   background: #e9e6dc;
 }
-
-.nav-inner nav .active {
-  background: #111;
-  color: #fff;
-  font-weight: 500;
-}
-
-.contact-btn {
-  background: #e9e6dc;
-  color: #1f1f1f;
-}
-
 /* ================= HERO ================= */
 .usecases-hero {
   max-width: 900px;
@@ -208,7 +196,7 @@ img {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .usecases-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -240,4 +228,4 @@ img {
   .footer-big-text {
     font-size: 80px;
   }
-}
+} */
