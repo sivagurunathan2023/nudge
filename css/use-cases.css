@@ -236,3 +236,14 @@ img {
     font-size: 80px;
   }
 } */
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
+}
+/* ACTIVE PAGE */
+.nav-inner nav .active {
+  background: #111;
+  color: #fff;
+  font-weight: 500;
+}
