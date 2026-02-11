@@ -42,7 +42,7 @@ body {
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 20px;
+  top: 10px;
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -61,10 +61,12 @@ body {
 
 .logo img {
   height: 24px;
+  display: block;
 }
 .nav-inner nav {
   display: flex;
   gap: 6px;
+  align-items: center;
 }
 
 .nav-inner nav a {
@@ -74,13 +76,13 @@ body {
   padding: 6px 10px;
   border-radius: 20px;
   white-space: nowrap;
+  transition: 0.2s;
 }
 
 .nav-inner nav .active {
   background: #161615;
   color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-weight:500;
 }
 .nav-inner nav a:hover {
   background: #e9e6dc;
@@ -89,9 +91,9 @@ body {
 .contact-btn {
   background: #111;
   color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
+  
 }
+
 
 /* HERO */
 .hero {
@@ -211,16 +213,7 @@ body {
   z-index: 2;
 }
 /* MOBILE */
-@media (max-width: 900px) {
-  .platform-section,
-  .testimonial-box,
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .platform-section.reverse { direction: ltr; }
-  .hero h1 { font-size: 36px; }
-}
+
 /* ================= FEATURES HEADER ================= */
 .features-header {
   display: flex;
@@ -240,16 +233,7 @@ body {
 }
 
 /* Mobile fix */
-@media (max-width: 900px) {
-  .features-header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .get-touch-btn {
-    align-self: flex-start;
-  }
-}
 /* ================= BENEFITS ================= */
 .benefits {
   max-width: 1200px;
@@ -321,18 +305,7 @@ body {
   background: #f4f2ea;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .benefits-header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .benefits-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
 /* ================= SCIENCE ================= */
 .science {
   max-width: 1200px;
@@ -400,32 +373,7 @@ body {
   background: #f4f2ea;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .science-header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .science-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-.logo img {
-  cursor: pointer;
-}
-
-/* remove any hover underline */
-.logo a {
-  text-decoration: none;
-}
-
-/* image clean */
-.logo img {
-  display: block;
-}
 /* ================= FINAL CTA ================= */
 .final-cta {
   text-align: center;
@@ -472,17 +420,157 @@ body {
   display: block;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
+
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* ---------- NAVBAR ---------- */
+  .nav-inner {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .nav-inner nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-inner nav a {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    margin: 80px auto 60px;
+    padding: 0 18px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  /* ---------- PLATFORM SECTIONS ---------- */
+  .platform-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .platform-section.reverse {
+    direction: ltr;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .media {
+    padding: 20px;
+  }
+
+  /* ---------- TESTIMONIAL ---------- */
+  .testimonial-box {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  /* ---------- FEATURES ---------- */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .features h2 {
+    font-size: 28px;
+  }
+
+  .features-desc {
+    font-size: 15px;
+    margin: 0 auto 30px;
+  }
+
+  /* ---------- BENEFITS ---------- */
+  .benefits-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .benefits-desc {
+    margin: auto;
+  }
+
+  .benefit-item {
+    text-align: left;
+  }
+
+  /* ---------- SCIENCE ---------- */
+  .science-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .science-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* ---------- CTA ---------- */
+  .final-cta {
+    padding: 100px 20px 80px;
+  }
+
   .final-cta h2 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  .final-cta p {
+    font-size: 15px;
   }
 
   .cta-brand span {
-    font-size: 120px;
-    letter-spacing: -6px;
+    font-size: 90px;
+    letter-spacing: -4px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer-big-text {
+    font-size: 70px;
+    top: 60px;
+  }
+
+  .footer-content {
+    text-align: center;
+    gap: 12px;
   }
 }
+
 
 
 
