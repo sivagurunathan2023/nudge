@@ -13,13 +13,13 @@ body {
 
 /* HEADER */
 .header { padding: 20px 0; }
-.nav {
+/* .nav {
   max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .logo { height: 28px; }
 .menu a {
   margin-left: 24px;
@@ -38,6 +38,7 @@ body {
   padding: 8px 16px;
   border-radius: 20px;
 }
+
 
 /* ================= NAVBAR ================= */
 .navbar {
@@ -61,12 +62,11 @@ body {
 
 .logo img {
   height: 24px;
-  display: block;
 }
+
 .nav-inner nav {
   display: flex;
   gap: 6px;
-  align-items: center;
 }
 
 .nav-inner nav a {
@@ -75,24 +75,25 @@ body {
   color: #1f1f1f;
   padding: 6px 10px;
   border-radius: 20px;
-  
+  white-space: nowrap;
 }
 
-.nav-inner nav .active {
-  background: #161615;
-  color: white;
-  font-weight:500;
-}
 .nav-inner nav a:hover {
   background: #e9e6dc;
 }
 
-.contact-btn {
+/* ACTIVE PAGE */
+.nav-inner nav .active {
   background: #111;
-  color: #fff !important;
-  
+  color: #fff;
+  font-weight: 500;
 }
 
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
+}
 
 /* HERO */
 .hero {
