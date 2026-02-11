@@ -451,6 +451,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 
 /* ================= FINAL FOOTER OVERRIDE (CONTACT STYLE) ================= */
 .footer {
@@ -590,3 +591,134 @@ body {
   background: #e9e6dc;
   color: #1f1f1f;
 }
+=======
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  /* ---------- NAVBAR ---------- */
+  .navbar {
+    top: 10px;
+  }
+
+  .nav-inner,
+  .nav-container {
+    padding: 10px 16px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .nav-inner nav,
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .nav-inner nav a,
+  .nav-links a {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    margin-top: 60px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta {
+    padding: 100px 16px 80px;
+  }
+
+  .final-cta h2 {
+    font-size: 28px;
+  }
+
+  .final-cta p {
+    font-size: 15px;
+  }
+
+  .cta-brand span {
+    font-size: 90px;
+    letter-spacing: -4px;
+  }
+
+  /* ---------- BEHAVIOR SECTION ---------- */
+  .behavior-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  /* ---------- NUDGE FEATURES ---------- */
+  .nudge-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .nudge-card img {
+    max-width: 260px;
+  }
+
+  .nudge-text h2 {
+    font-size: 22px;
+  }
+
+  .nudge-text p {
+    font-size: 14px;
+  }
+
+  /* ---------- TESTIMONIAL ---------- */
+  .nudge-testimonial {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .nudge-quote {
+    font-size: 18px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    padding-top: 120px;
+  }
+
+  .footer-big-text {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-right a {
+    margin-left: 12px;
+  }
+}
+
+
+>>>>>>> d737962 (updated by nithish)
