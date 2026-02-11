@@ -37,80 +37,52 @@ body {
   padding: 8px 16px;
   border-radius: 20px;
 }
-/* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
-  top: 12px;
+  top: 10px;
   display: flex;
   justify-content: center;
   z-index: 100;
 }
 
 .nav-inner {
-  width: 92%;
+  width: 94%;
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 12px 20px;
+  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* LOGO */
 .logo img {
-  height: 26px;
-  display: block;
-  cursor: pointer;
+  height: 24px;
 }
 
-.logo a {
-  text-decoration: none;
-}
-
-/* NAV LINKS */
 .nav-inner nav {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .nav-inner nav a {
   text-decoration: none;
-  font-size: 14px;
-  color: #2b2b2b;
-  padding: 8px 14px;
+  font-size: 13px;        /* 👀 mobile readable */
+  color: #1f1f1f;
+  padding: 6px 10px;
   border-radius: 20px;
   white-space: nowrap;
 }
 
-/* ACTIVE LINK */
-.nav-inner nav .active {
+.nav-inner nav a:hover {
   background: #e9e6dc;
-  font-weight: 500;
 }
 
-/* CONTACT BUTTON (LIGHT BG) */
-.contact-btn {
+/* ACTIVE PAGE */
+.nav-inner nav .active {
   background: #111;
-  color: #fff !important;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-
-  .nav-inner {
-    padding: 10px 14px;
-  }
-
-  .logo img {
-    height: 22px;
-  }
-
-  .nav-inner nav a {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
+  color: #fff;
+  font-weight: 500;
 }
 
 /* HERO */
@@ -503,61 +475,4 @@ body {
     letter-spacing: -6px;
   }
 }
-
-/* ================= CONTACT NAVBAR ================= */
-.navbar {
-  position: sticky;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  z-index: 100;
-}
-
-.nav-inner {
-  width: 90%;
-  max-width: 1100px;
-  background: #f7f6ef;
-  border-radius: 40px;
-  padding: 12px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* LOGO */
-.logo img {
-  height: 26px;
-  display: block;
-  cursor: pointer;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
-/* NAV LINKS */
-.nav-inner nav a {
-  margin-left: 22px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #2b2b2b;
-}
-
-/* ACTIVE PAGE */
-.nav-inner nav .active {
-  background: #e9e6dc;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-/* CONTACT BUTTON */
-.contact-btn {
-  background: #111;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-
-
 
