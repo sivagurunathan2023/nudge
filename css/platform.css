@@ -458,3 +458,50 @@ body {
   }
 }
 
+/* ================= MOBILE TYPO FIX ================= */
+@media (max-width: 900px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px !important;
+    line-height: 1.7;
+  }
+
+  .text p,
+  .feature p,
+  .benefit-item p,
+  .science-item p,
+  .features-desc,
+  .benefits-desc,
+  .science-desc {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .platform-section,
+  .testimonial,
+  .features,
+  .benefits,
+  .science {
+    margin-bottom: 70px;
+  }
+
+  .final-cta {
+    padding: 100px 20px 80px;
+  }
+
+}
