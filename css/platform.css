@@ -12,31 +12,7 @@ body {
 
 /* HEADER */
 .header { padding: 20px 0; }
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo { height: 28px; }
-.menu a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-.menu .active {
-  background: #f4f2ea;
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-.menu .btn {
-  background: #111;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
+/* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
   top: 10px;
@@ -83,6 +59,12 @@ body {
   background: #111;
   color: #fff;
   font-weight: 500;
+}
+
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
 }
 
 /* HERO */
