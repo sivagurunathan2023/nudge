@@ -13,50 +13,6 @@ body {
   max-width: 1100px;
   margin: auto;
 }
-/* ================= NAVBAR ================= */
-.navbar {
-  position: sticky;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  z-index: 100;
-}
-
-.nav-inner {
-  width: 90%;
-  max-width: 1100px;
-  background: #f7f6ef;
-  border-radius: 40px;
-  padding: 12px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 26px;
-}
-
-.nav-inner nav a {
-  margin-left: 22px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #2b2b2b;
-}
-
-.nav-inner nav .active {
-  background: #e9e6dc;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-.contact-btn {
-  background: #111;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
 
 /* ================= FINAL CTA ================= */
 .final-cta {
@@ -196,54 +152,7 @@ body {
   min-height: 100vh;
 }
 
-/* NAVBAR */
-.navbar {
-  padding: 20px 0;
-}
 
-.nav-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-  background: #ece9dc;
-  border-radius: 40px;
-  height: 56px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-weight: 500;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.logo-dot {
-  font-size: 18px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #1c1c1c;
-  font-size: 14px;
-}
-
-.contact-btn {
-  background: #1c1c1c;
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
 
 /* HERO */
 .hero {
@@ -543,59 +452,48 @@ body {
 }
 
 
-/* ================= FINAL NAVBAR OVERRIDE (CONTACT STYLE) ================= */
-.navbar {
-  position: sticky !important;
-  top: 10px !important;
-  display: flex !important;
-  justify-content: center !important;
-  z-index: 999 !important;
-}
-
-.nav-inner {
-  width: 94% !important;
-  max-width: 1100px !important;
+/* ================= FINAL FOOTER OVERRIDE (CONTACT STYLE) ================= */
+.footer {
+  position: relative !important;
   background: #f7f6ef !important;
-  border-radius: 40px !important;
-  padding: 10px 16px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  padding-top: 160px !important;
+  overflow: hidden !important;
 }
 
-.logo img {
-  height: 24px !important;
+.footer-big-text {
+  position: absolute !important;
+  top: 50px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  font-size: 120px !important;
+  font-weight: 700 !important;
+  color: #1f1f1f !important;
+  pointer-events: none !important;
+}
+
+.footer-content {
+  margin-top: 100px !important;
+  padding: 0 20px 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  color: #8a8a8a !important;
+}
+
+.footer-right a {
+  margin: 0 10px !important;
+  text-decoration: none !important;
+  color: #8a8a8a !important;
+}
+
+.footer-image {
+  width: 100% !important;
   display: block;
 }
 
-.nav-inner nav {
-  display: flex !important;
-  gap: 6px !important;
-}
 
-.nav-inner nav a {
-  text-decoration: none !important;
-  font-size: 13px !important;
-  color: #1f1f1f !important;
-  padding: 6px 10px !important;
-  border-radius: 20px !important;
-  white-space: nowrap !important;
-}
-
-.nav-inner nav a:hover {
-  background: #e9e6dc !important;
-}
-
-.nav-inner nav .active {
-  background: #111 !important;
-  color: #fff !important;
-  font-weight: 500 !important;
-}
-
-.contact-btn {
-  background: #e9e6dc !important;
-  color: #1f1f1f !important;
-}
 
 /* ================= FINAL FOOTER OVERRIDE (CONTACT STYLE) ================= */
 .footer {
@@ -638,134 +536,57 @@ body {
   display: block;
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-  .nav-inner {
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  .nav-inner nav {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-  }
-
-  .footer-big-text {
-    font-size: 80px !important;
-  }
-}
-
-
-
-/* ================= FINAL NAVBAR OVERRIDE (CONTACT STYLE) ================= */
+/* ================= NAVBAR ================= */
 .navbar {
-  position: sticky !important;
-  top: 10px !important;
-  display: flex !important;
-  justify-content: center !important;
-  z-index: 999 !important;
+  position: sticky;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
 .nav-inner {
-  width: 94% !important;
-  max-width: 1100px !important;
-  background: #f7f6ef !important;
-  border-radius: 40px !important;
-  padding: 10px 16px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+  width: 94%;
+  max-width: 1100px;
+  background: #f7f6ef;
+  border-radius: 40px;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
-  height: 24px !important;
-  display: block;
+  height: 24px;
 }
 
 .nav-inner nav {
-  display: flex !important;
-  gap: 6px !important;
+  display: flex;
+  gap: 6px;
 }
 
 .nav-inner nav a {
-  text-decoration: none !important;
-  font-size: 13px !important;
-  color: #1f1f1f !important;
-  padding: 6px 10px !important;
-  border-radius: 20px !important;
-  white-space: nowrap !important;
+  text-decoration: none;
+  font-size: 13px;        /* 👀 mobile readable */
+  color: #1f1f1f;
+  padding: 6px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 .nav-inner nav a:hover {
-  background: #e9e6dc !important;
+  background: #e9e6dc;
 }
 
+/* ACTIVE PAGE */
 .nav-inner nav .active {
-  background: #111 !important;
-  color: #fff !important;
-  font-weight: 500 !important;
+  background: #111;
+  color: #fff;
+  font-weight: 500;
 }
 
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
 .contact-btn {
-  background: #e9e6dc !important;
-  color: #1f1f1f !important;
+  background: #e9e6dc;
+  color: #1f1f1f;
 }
-
-/* ================= FINAL FOOTER OVERRIDE (CONTACT STYLE) ================= */
-.footer {
-  position: relative !important;
-  background: #f7f6ef !important;
-  padding-top: 160px !important;
-  overflow: hidden !important;
-}
-
-.footer-big-text {
-  position: absolute !important;
-  top: 50px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  font-size: 120px !important;
-  font-weight: 700 !important;
-  color: #1f1f1f !important;
-  pointer-events: none !important;
-}
-
-.footer-content {
-  margin-top: 100px !important;
-  padding: 0 20px 40px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-  text-align: center !important;
-  font-size: 14px !important;
-  color: #8a8a8a !important;
-}
-
-.footer-right a {
-  margin: 0 10px !important;
-  text-decoration: none !important;
-  color: #8a8a8a !important;
-}
-
-.footer-image {
-  width: 100% !important;
-  display: block;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-  .nav-inner {
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  .nav-inner nav {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-  }
-
-  .footer-big-text {
-    font-size: 80px !important;
-  }
-}
-
