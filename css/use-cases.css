@@ -98,29 +98,36 @@ img {
   gap: 48px;
 }
 
-.usecase-img {
-  background: #f4f2ea;
-  border-radius: 20px;
-  padding: 24px;
-  margin-bottom: 18px;
-}
-
-.usecase-img img {
+.usecase-card {
   width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
 }
 
-.usecase-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .usecases-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
 }
 
-.usecase-card p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
+@media (max-width: 768px) {
+
+  /* 🔥 IMPORTANT FIX */
+  .usecases-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .usecase-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .usecases-hero h1 {
+    font-size: 36px;
+  }
 }
+
 
 /* ================= CTA ================= */
 .cta-section {
