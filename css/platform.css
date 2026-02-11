@@ -280,6 +280,45 @@ body {
   background: #f7f6ef;
   padding-top: 200px;
 }
+.footer {
+  position: relative;
+  background: #f7f6ef;
+  padding-top: 160px;
+  overflow: hidden;
+}
+
+.footer-big-text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  font-weight: 700;
+  color: #1f1f1f;
+  pointer-events: none;
+}
+
+.footer-content {
+  margin-top: 100px;
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.footer-right a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+.footer-image {
+  width: 100%;
+}
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
