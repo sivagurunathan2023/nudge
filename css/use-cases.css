@@ -36,6 +36,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .logo img {
@@ -45,6 +46,7 @@ img {
 .nav-inner nav {
   display: flex;
   gap: 6px;
+  align-items: center;
 }
 
 .nav-inner nav a {
@@ -70,6 +72,37 @@ img {
   background: #e9e6dc;
   color: #1f1f1f;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* 🔥 IMPORTANT FIX */
+  .nav-inner {
+    flex-direction: row;   /* column remove panniten */
+    overflow-x: auto;      /* small screen la scroll */
+  }
+
+  .nav-inner nav {
+    flex-wrap: nowrap;     /* wrap prevent */
+  }
+
+  .usecases-hero h1 {
+    font-size: 36px;
+  }
+
+  .usecases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-big-text {
+    font-size: 80px;
+  }
+}
+
 
 /* ================= HERO ================= */
 .usecases-hero {
@@ -205,39 +238,4 @@ img {
 
 .footer-image {
   width: 100%;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1024px) {
-  .usecases-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-
-  .nav-inner {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-inner nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .usecases-hero h1 {
-    font-size: 36px;
-  }
-
-  .usecases-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-big-text {
-    font-size: 80px;
-  }
 }
