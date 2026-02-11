@@ -584,9 +584,3 @@ body {
   color: #fff;
   font-weight: 500;
 }
-
-/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
-.contact-btn {
-  background: #e9e6dc;
-  color: #1f1f1f;
-}

@@ -357,3 +357,8 @@ body {
   }
 
 }
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
+}

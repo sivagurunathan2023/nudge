@@ -59,6 +59,13 @@ img {
 .nav-inner nav a:hover {
   background: #e9e6dc;
 }
+
+/* ACTIVE PAGE */
+.nav-inner nav .active {
+  background: #111;
+  color: #fff;
+  font-weight: 500;
+}
 /* ================= HERO ================= */
 .usecases-hero {
   max-width: 900px;
@@ -246,4 +253,10 @@ img {
   background: #111;
   color: #fff;
   font-weight: 500;
+}
+
+/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
+.contact-btn {
+  background: #e9e6dc;
+  color: #1f1f1f;
 }
