@@ -37,7 +37,9 @@
     <a href="contact.html" class="cta-btn">Get in touch</a>
 
     <div class="hero-image">
-      <img src="images/Herohands.jpg" alt="Hands illustration" />
+        <video id="scrollVideo" preload="auto" muted playsinline>
+    <source src="/video/hand.mp4" type="video/mp4">
+  </video>
     </div>
   </main>
   
@@ -1016,5 +1018,27 @@
   <img src="img/foot.jpeg" class="footer-image" alt="trees">
 </footer>
 
+<script>
+const video = document.getElementById("scrollVideo");
+
+video.addEventListener("loadedmetadata", () => {
+
+  const scrollHeight = document.body.scrollHeight - window.innerHeight;
+
+  const speed = 14; // 🔥 increase this value for more speed
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const scrollFraction = (scrollTop / scrollHeight) * speed;
+
+    const videoTime = video.duration * scrollFraction;
+
+    video.currentTime = Math.min(video.duration, videoTime);
+  });
+
+});
+
+
+</script>
 </body>
 </html>
