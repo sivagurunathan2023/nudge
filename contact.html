@@ -67,6 +67,7 @@
 </div>
 
 <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="footer-big-text">nudge</div>
 
@@ -78,8 +79,28 @@
     </div>
   </div>
 
-  <img src="img/foot.jpeg" class="footer-image" alt="trees">
+  <img src="img/tree.jpeg" class="footer-image" alt="trees">
 </footer>
+
+
+<!-- ✅ PARALLAX SCRIPT -->
+<script>
+  const footer = document.querySelector(".footer");
+  const image = document.querySelector(".footer-image");
+
+  window.addEventListener("scroll", () => {
+    const rect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      const scrollProgress = (windowHeight - rect.top) / windowHeight;
+
+      // 🔥 movement strength adjust here (120 change pannalaam)
+      image.style.transform = `translateY(${scrollProgress * 120}px)`;
+    }
+  });
+</script>
+
 
 <script>
   const form = document.getElementById("contactForm");

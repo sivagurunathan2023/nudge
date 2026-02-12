@@ -171,11 +171,15 @@ button {
 }
 
 /* ================= FOOTER ================= */
+/* ================= FOOTER ================= */
 .footer {
   position: relative;
   background: #f7f6ef;
-  padding-top: 160px;
+  height: 500px;           /* 👈 fixed height */
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .footer-big-text {
@@ -190,22 +194,19 @@ button {
 }
 
 .footer-content {
-  margin-top: 100px;
+  position: relative;
+  z-index: 2;
   padding: 0 20px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   text-align: center;
   font-size: 14px;
   color: #8a8a8a;
 }
 
-.footer-right a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #8a8a8a;
-}
-
+/* 👇 IMPORTANT PART */
 .footer-image {
+  position: absolute;
+  bottom: -120px;   /* 👈 extra space for upward movement */
+  left: 0;
   width: 100%;
+  will-change: transform;
 }
