@@ -11,11 +11,11 @@ body {
   color: #1f1f1f;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* ================= NAVBAR ================= */
 .navbar {
@@ -35,6 +35,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .logo img {
@@ -195,4 +196,11 @@ img {
 .footer-image {
   width: 100%;
 }
+/* ================= MOBILE RESPONSIVE NAVBAR ================= */
+@media (max-width: 768px) {
 
+  body {
+    font-size: 15px;
+  }
+
+}
