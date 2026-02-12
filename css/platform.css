@@ -593,8 +593,13 @@ body {
     display:flex;
     justify-content:center;
   } */
+.logo {
+  text-decoration: none;   /* underline remove */
+  color: black;            /* black color */
+  font-size: 20px;
+  font-weight: 500;
+}
 
 
 
   
-

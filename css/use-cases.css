@@ -12,11 +12,11 @@ body {
   font-size: 16px;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
   display: block;
-} */
+}
 
 
 /* ================= NAVBAR ================= */
@@ -65,7 +65,7 @@ body {
 .nav-inner nav .active {
   background: #111;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
@@ -266,4 +266,10 @@ body {
 .contact-btn {
   background: #e9e6dc;
   color: #1f1f1f;
+}
+.logo {
+  text-decoration: none;   /* underline remove */
+  color: black;            /* black color */
+  font-size: 20px;
+  font-weight: 500;
 }
