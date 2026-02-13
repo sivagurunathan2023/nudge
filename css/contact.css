@@ -31,7 +31,7 @@ body {
   max-width: 1100px;
   background: #f7f6ef;
   border-radius: 40px;
-  padding: 10px 16px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,3 +215,39 @@ button {
   font-size: 20px;
   font-weight: 500;
 }
+.logo-link{
+  display:flex;
+  align-items:center;
+  gap:0px;
+  text-decoration:none;
+  color:#26251e;
+  font: size 16px;
+  font-weight:600;
+}
+
+.logo-link svg{
+  width:28px;
+  fill:currentColor;
+  transition:.2s;
+}
+
+.logo-link:hover{
+  color:#545244;
+}
+.logo a{
+  display:flex;
+  align-items:center;
+  gap:3px;
+  text-decoration:none;
+  color:#1f1f1f;
+  font-size:16px;   /* match nav link visual height */
+  font-weight:600;
+  line-height:1;    /* prevents vertical offset */
+}
+.logo svg{
+  height:20px;      /* match nav text height */
+  width:auto;
+  display:block;    /* removes inline svg baseline gap */
+  fill:currentColor;
+}
+
