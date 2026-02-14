@@ -11,59 +11,7 @@ body {
   color: #111;
 }
 
-.navbar {
-  position: sticky;
-  top: 10px;
-  display: flex;
-  justify-content: center;
-  z-index: 100;
-}
 
-.nav-inner {
-  width: 94%;
-  max-width: 1100px;
-  background: #f7f6ef;
-  border-radius: 40px;
-  padding: 10px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 24px;
-}
-
-.nav-inner nav {
-  display: flex;
-  gap: 6px;
-}
-
-.nav-inner nav a {
-  text-decoration: none;
-  font-size: 13px;        /* 👀 mobile readable */
-  color: #1f1f1f;
-  padding: 6px 10px;
-  border-radius: 20px;
-  white-space: nowrap;
-}
-
-.nav-inner nav a:hover {
-  background: #e9e6dc;
-}
-
-/* ACTIVE PAGE */
-.nav-inner nav .active {
-  background: #111;
-  color: #fff;
-  font-weight: 500;
-}
-
-/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
-.contact-btn {
-  background: #e9e6dc;
-  color: #1f1f1f;
-}
 /* HERO */
 .hero {
   max-width: 820px;
@@ -575,65 +523,145 @@ body {
     padding: 0 20px 50px;
   }
 }
-/* CONTACT BUTTON – NO BLACK BG BY DEFAULT */
-/* .contact-btn {
-  background: #e9e6dc;
-  color: #1f1f1f;
-} */
- /* .nav-inner {
-    flex-direction: column;
-    gap: 12px;
+
+
+.navbar{
+  position:sticky;
+  top:10px;
+  display:flex;
+  justify-content:center;
+  z-index:1000;
 }
 
-.nav-inner nav {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  .logo{
-    display:flex;
-    justify-content:center;
-  } */
-.logo {
-  text-decoration: none;   /* underline remove */
-  color: black;            /* black color */
-  font-size: 20px;
-  font-weight: 500;
+.nav-inner{
+  width:94%;
+  max-width:1200px;
+  background:#f7f6ef;
+  border-radius:40px;
+  padding:12px 25px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
 }
 
+/* LOGO */
 .logo-link{
   display:flex;
   align-items:center;
-  gap:0px;
+  gap:10px;
   text-decoration:none;
-  color:#26251e;
-  font: size 16px;
+  color:#111;
   font-weight:600;
+  font-size:18px;
 }
 
-.logo-link svg{
+.logo-icon{
   width:28px;
-  fill:currentColor;
-  transition:.2s;
+  fill:black;
 }
 
-.logo-link:hover{
-  color:#545244;
-}
-.logo a{
+/* DESKTOP NAV */
+.nav-links{
   display:flex;
-  align-items:center;
-  gap:3px;
-  text-decoration:none;
-  color:#1f1f1f;
-  font-size:16px;   /* match nav link visual height */
-  font-weight:600;
-  line-height:1;    /* prevents vertical offset */
+  gap:28px;
 }
-.logo svg{
-  height:20px;      /* match nav text height */
-  width:auto;
-  display:block;    /* removes inline svg baseline gap */
-  fill:currentColor;
+
+.nav-links a{
+  text-decoration:none;
+  color:#111;
+  font-weight:500;
+}
+
+/* BURGER (hidden desktop) */
+.burger{
+  display:none;
+  width:26px;
+  height:18px;
+  flex-direction:column;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.burger span{
+  height:3px;
+  background:#111;
+  border-radius:2px;
+  transition:.3s;
+}
+
+/* MOBILE MENU */
+.mobile-menu{
+  position:absolute;
+  top:70px;
+  right:20px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  padding:20px 30px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(-10px);
+  transition:.3s;
+}
+
+.mobile-menu a{
+  text-decoration:none;
+  color:#111;
+  font-weight:500;
+}
+
+.mobile-menu.show{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+/* BURGER ANIMATION */
+.burger.active span:nth-child(1){
+  transform:rotate(45deg) translateY(8px);
+}
+.burger.active span:nth-child(2){
+  opacity:0;
+}
+.burger.active span:nth-child(3){
+  transform:rotate(-45deg) translateY(-8px);
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .burger{
+    display:flex;
+  }
+}
+@media (max-width:768px){
+
+  .mobile-menu a{
+    padding:12px 16px;
+    border-radius:12px;
+    transition: all .25s ease;
+  }
+
+  .mobile-menu a:hover{
+    background:#f3f3f3;
+    transform:translateX(5px);
+  }
+
+  .mobile-menu a:active{
+    background:#e7e7e7;
+    transform:scale(.97);
+  }
+
 }
 
 

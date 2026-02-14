@@ -12,26 +12,49 @@
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="nav-inner">
-        <div class="logo">
-      <a href="index.html" class="logo-link">
 
-        <svg viewBox="0 0 1456 1502" class="logo-icon">
+    <!-- Logo -->
+    <a href="index.html" class="logo-link">
+      <svg viewBox="0 0 1456 1502" class="logo-icon">
         <path d="M727.785 83.5015C1129.73 83.5016 1455.57 409.342 1455.57 811.287C1455.57 1132.11 1247.98 1404.45 959.792 1501.3C944.958 1506.29 929.947 1495.01 929.947 1479.36V826.449C929.947 714.798 839.436 624.286 727.785 624.286C616.134 624.286 525.623 714.797 525.623 826.449V1479.36C525.623 1495.01 510.612 1506.29 495.778 1501.31C207.592 1404.45 0.000131716 1132.11 0 811.287C0 409.342 325.841 83.5015 727.785 83.5015Z"/>
-        </svg>
+      </svg>
+      <span>nudge</span>
+    </a>
 
-        <span>nudge</span>
-
-       </a>
-    </div>
-
-    <nav>
-      <a href="use-cases.html"  class="active contact-btn">Use Cases</a>
+    <!-- Desktop Nav -->
+    <nav class="nav-links">
+      <a href="use-cases.html">Use Cases</a>
       <a href="platform.html">Platform</a>
       <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <!-- Burger -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="menu">
+      <a href="use-cases.html">Use Cases</a>
+      <a href="platform.html">Platform</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
   </div>
 </header>
+<script>
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+
+burger.addEventListener("click",()=>{
+  burger.classList.toggle("active");
+  menu.classList.toggle("show");
+});
+</script>
 
 <!-- ================= HERO ================= -->
 <section class="usecases-hero">
